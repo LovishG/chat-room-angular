@@ -3,4 +3,4 @@
 <input #input type="text" placeholder="Enter Joinee" />
 <button (click)="pushToArray(input.value)">Join</button>
 <br>
-<box *ngFor="let value of array" [name]="value" [allMessages]="serviceValue" (message-sent)="setValuesOfService($event)"></box>
+<box *ngFor="let value of array;" [name]="value" [allMessages]="serviceValue" (message-sent)="setValuesOfService($event)"></box>
