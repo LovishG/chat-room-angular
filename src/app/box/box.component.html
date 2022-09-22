@@ -1,7 +1,7 @@
 <div class="user-chat-box" *ngIf="!isCanceled">
   <div class="chat-header">
     <h2 #value>{{ name }}</h2>
-    <button (click)="onClick()">X</button>
+    <button (click)="onClickCancel()">X</button>
   </div>
 
   <div id="chat-messages-list">
@@ -22,6 +22,6 @@
       type="text"
       placeholder="Type message here..."
     />
-    <button (click)="msgSent(msg.value, value.innerHTML)">Send</button>
+    <button (click)="msgSend(msg.value, value.innerHTML)">Send</button>
   </div>
 </div>

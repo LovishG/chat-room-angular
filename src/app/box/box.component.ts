@@ -22,7 +22,7 @@ export class BoxComponent {
   time:string = '';
 
   
-  msgSent(msg:string,name:string){
+  msgSend(msg:string,name:string){
 
     if(!msg) return;
 
@@ -37,7 +37,7 @@ export class BoxComponent {
 
   }
 
-  onClick(){
+  onClickCancel(){
     this.isCanceled = !this.isCanceled;
   }
 }
