@@ -20,7 +20,7 @@ export class AppComponent {
     if(name=='') return alert('no name typed');
     if(this.array.includes(name))
     {
-      return alert('person with this name already exists or Empty');
+      return alert('same person either already exists or he has now closed his chat');
 
     }
     let value = <string>document.querySelector('input')?.value;

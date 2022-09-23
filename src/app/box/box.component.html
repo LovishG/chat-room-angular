@@ -22,6 +22,6 @@
       type="text"
       placeholder="Type message here..."
     />
-    <button (click)="msgSend(msg.value, value.innerHTML)">Send</button>
+    <button (click)="msgSend(msg.value, value.innerHTML); msg.value = ''">Send</button>
   </div>
 </div>

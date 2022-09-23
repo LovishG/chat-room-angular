@@ -1,6 +1,6 @@
 <h1>Welcome to chat room</h1>
 
 <input #input type="text" placeholder="Enter Joinee" />
-<button (click)="pushToArray(input.value)">Join</button>
+<button (click)="pushToArray(input.value); input.value = ''">Join</button>
 <br>
 <box *ngFor="let value of array;" [name]="value" [allMessages]="serviceValue" (message-sent)="setValuesOfService($event)"></box>
